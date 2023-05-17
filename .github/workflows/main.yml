@@ -31,3 +31,11 @@ jobs:
         cd infra_project/
         # запустить написанные разработчиком тесты
         python manage.py test
+
+[isort]
+default_section=THIRDPARTY
+known_first_party=infra_project
+known_django=django, rest_framework
+known_djoser=djoser
+sections=FUTURE,STDLIB,DJANGO,DJOSER,THIRDPARTY,FIRSTPARTY,LOCALFOLDER
+no_lines_before=DJOSER
